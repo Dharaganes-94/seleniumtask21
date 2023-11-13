@@ -24,8 +24,10 @@ public class IframeTask {
         
         Thread.sleep(2000);
         
+        driver.findElement(By.id("tinymce")).clear();
+		Thread.sleep(1000);
         
-        driver.findElement(By.tagName("p")).sendKeys("Hello People");
+        driver.findElement(By.xpath("//body[@id='tinymce']")).sendKeys("Hello People");
         
         Thread.sleep(2000);
        
