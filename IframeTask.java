@@ -22,7 +22,6 @@ public class IframeTask {
 		WebElement frame1 =driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']"));
         driver.switchTo().frame(frame1);
         
-        Thread.sleep(2000);
         
         driver.findElement(By.id("tinymce")).clear();
 		Thread.sleep(1000);
